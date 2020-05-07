@@ -2,6 +2,7 @@ pragma solidity ^0.5.0;
 
 // lvl 3: equity plan
 contract DeferredEquityPlan {
+    uint fakenow = now;
     address human_resources;
 
     address payable employee; // bob
@@ -9,8 +10,11 @@ contract DeferredEquityPlan {
 
     // @TODO: Set the total shares and annual distribution
     // Your code here!
+    uint total_shares = 1000;
+    uint annual_distribution = 250; //annual distribution is 1/4 of Total Shares. Initially 250.
 
-    uint start_time = now; // permanently store the time this contract was initialized
+    uint start_time = fakenow; // permanently store the time this contract was initialized
+    uint unlock_time = fakenow + 365 days; 
 
     // @TODO: Set the `unlock_time` to be 365 days from now
     // Your code here!
@@ -30,13 +34,17 @@ contract DeferredEquityPlan {
         // 1: `unlock_time` is less than or equal to `now`
         // 2: `distributed_shares` is less than the `total_shares`
         // Your code here!
+        require(unlock_time <= fakenow, "Shares still locked!");
+        require(distributed_shares < total_shares, "Distributed Shares greater than Total Shares!");
 
         // @TODO: Add 365 days to the `unlock_time`
         // Your code here!
+        unlock_time += 365 days; // lock for another year
 
         // @TODO: Calculate the shares distributed by using the function (now - start_time) / 365 days * the annual distribution
         // Make sure to include the parenthesis around (now - start_time) to get accurate results!
         // Your code here!
+        distributed_shares = (fakenow - start_time) / 365 days * annual_distribution;
 
         // double check in case the employee does not cash out until after 5+ years
         if (distributed_shares > 1000) {
@@ -48,6 +56,10 @@ contract DeferredEquityPlan {
     function deactivate() public {
         require(msg.sender == human_resources || msg.sender == employee, "You are not authorized to deactivate this contract.");
         active = false;
+    }
+    
+    function fastforward() public {
+        fakenow += 100 days;
     }
 
     // Since we do not need to handle Ether in this contract, revert any Ether sent to the contract directly
