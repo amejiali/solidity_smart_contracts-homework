@@ -58,12 +58,23 @@ The following contracts has been developed for this assignment in [Remix](https:
    
 3. [`DeferredEquityPlan.sol`](Starter-Code/DeferredEquityPlan.sol)
 
-![Remix 11](Images/Picture11.png)
+   ![Remix 11](Images/Picture11.png)
    
    To be deployed with the following parameters:
                          
        HR Address: 0x40De7759EF972F8DB32D0cf55b589d37ec817Db8
        
        Bob Address: 0xbF2B8891a8D758dcaf50829Dc2356C199E0f3051
+      
+   ![Remix 13](Images/Picture13.png)
+
+       Contract: 0x7d56EFc60d02db2B1CdbC2519cC63c370f2E34C9
+       
+       After testing the contract using fast forwars, you can see the distributed shares increasing.
+
+       
+       At the final you can see the three contracts deployed to test. good to mention that these contracts are running in Localhost, as defined in Ganache. For this excercise port 8545 is used.
+       
+   ![Remix 14](Images/Picture14.png)
        
        
