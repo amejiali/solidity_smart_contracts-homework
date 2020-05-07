@@ -4,11 +4,10 @@
 
 ## Contracts Developed and Deployed
 
-
-
 The following contracts has been developed for this assignment in [Remix](https://remix.ethereum.org/#optimize=false&evmVersion=null&version=soljson-v0.5.17+commit.d19bba13.js). In the following links you can find the solidity code for each contract:
 
 1. [`AssociateProfitSplitter.sol`](Starter-Code/AssociateProfitSplitter.sol)
+
    ![Remix 1](Images/Picture1.png)
    
    To be deployed with the following parameters:
@@ -21,9 +20,17 @@ The following contracts has been developed for this assignment in [Remix](https:
 
        Employee3 Address: 0xbF2B8891a8D758dcaf50829Dc2356C199E0f3051
 
-![Remix 2](Images/Picture2.png)
+   ![Remix 2](Images/Picture2.png)
 
        Contract: 0xF8ef6A11d76dB9e0AaE21146592565E239F9445f
+       
+       After testing the contract with some values, you can check the balance of each address in MetaMask to validate the values:
+
+   ![Remix 3](Images/Picture3.png)
+
+   ![Remix 4](Images/Picture4.png)
+
+   ![Remix 5](Images/Picture5.png)
       
 2. [`TieredProfitSplitter.sol`](Starter-Code/TieredProfitSplitter.sol)
    
