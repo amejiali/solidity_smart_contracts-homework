@@ -2,25 +2,32 @@
 
 ![contract](https://image.shutterstock.com/z/stock-photo-two-hands-handshake-polygonal-low-poly-hud-illustration-smart-contract-agreement-blockchain-and-1161295627.jpg)
 
-## Background
+## Contracts Developed and Deployed
 
-Your new startup has created its own Ethereum-compatible blockchain to help connect financial institutions, and the team wants to build smart contracts to automate some company finances to make everyone's lives easier, increase transparency, and to make accounting and auditing practically automatic!
 
-Fortunately, you've been learning how to program smart contracts with Solidity! What you will be doing this assignment is creating a few `ProfitSplitter` contracts. These contracts will do several things:
 
-* Pay your Associate-level employees quickly and easily.
+The following contracts has been developed for this assignment in [Remix](https://remix.ethereum.org/#optimize=false&evmVersion=null&version=soljson-v0.5.17+commit.d19bba13.js). In the following links you can find the solidity code for each contract:
 
-* Distribute profits to different tiers of employees.
+1. [`AssociateProfitSplitter.sol`](Starter-Code/AssociateProfitSplitter.sol)
+   ![Remix 1](Images/Picture1.png)
+   
+   To be deployed with the following parameters:
+                         
+       HR Address: 0x40De7759EF972F8DB32D0cf55b589d37ec817Db8
 
-* Distribute company shares for employees in a "deferred equity incentive plan" automatically.
+       Employee1 Address: 0x5C08294107138BAA222E84CF69FCBbC599081A56
 
-## Files
+       Employee2 Address: 0x750F788B29ED558D1bBE401f7E67bC699fbe79E7
 
-* [`AssociateProfitSplitter.sol`](Starter-Code/AssociateProfitSplitter.sol) -- Level 1 starter code.
+       Employee3 Address: 0xbF2B8891a8D758dcaf50829Dc2356C199E0f3051
 
-* [`TieredProfitSplitter.sol`](Starter-Code/TieredProfitSplitter.sol) -- Level 2 starter code.
+![Remix 2](Images/Picture2.png)
 
-* [`DeferredEquityPlan.sol`](Starter-Code/DeferredEquityPlan.sol) -- Level 3 starter code.
+       Contract: 0xF8ef6A11d76dB9e0AaE21146592565E239F9445f
+      
+2. [`TieredProfitSplitter.sol`](Starter-Code/TieredProfitSplitter.sol)
+   
+3. [`DeferredEquityPlan.sol`](Starter-Code/DeferredEquityPlan.sol)
 
 ## Instructions
 
